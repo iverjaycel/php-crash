@@ -15,9 +15,13 @@
 </body>
 
 <?php
+
+    // create a function that will calculate the total price of the order
+    // the function should take 3 parameters: item, price, quantity
+    
     $item = "apple";
     $price = 5.99;
-    $quantity = $_POST ["quantity"];
+    $quantity = $_POST ["quantity"]; //cache var quantity
     $total = null;
 
     $total = $quantity*$price;
