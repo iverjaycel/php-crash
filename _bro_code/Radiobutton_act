@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+    <input type="radio" name="creditcard" value="visa">
+    Visa <br>
+    <input type="radio" name="creditcard" value="mastercard">
+    MasterCard <br>
+    <input type="radio" name="creditcard" value="Americanexp">
+    American Express <br>
+    <input type="submit" name="confirm" value="confirm">
+    </form>
+</body> 
+</html>
+<?php
+    //if you chose a var in radio table print the chosen one if not print error
+//     if(isset($_POST["confirm"])){
+//     $credit_card = $_POST["creditcard"];    
+//     echo $credit_card;
+// }
+//     if(isset($_POST["confirm"])){
+
+//         if(isset($_POST["creditcard"])){
+//             $credit_card = $_POST["creditcard"];
+//             echo $credit_card;
+//         }
+//         else{
+//             echo "pls make a selection";
+//         }
+// }
+
+//This is to solve value is Undfiend 
+$creditcard = NULL;
+
+
+// if(isset($_POST["confirm"])){
+
+//     if(isset($_POST["creditcard"])){
+//         $creditcard = $_POST["creditcard"];
+//         // echo $creditcard;
+//     }
+//     if($creditcard == "visa"){
+//         echo "You selected Visa";
+//     }
+//     elseif($creditcard == "mastercard"){
+//         echo"You selected master card";
+//     }
+//     elseif($creditcard == "Americanexp"){
+//         echo"you selected Americanexp";
+
+//     }
+//     else{
+//         echo "Pls make a selection";
+//     }
+// }
+
+
+if(isset($_POST["confirm"])){
+}
+    if(isset($_POST["creditcard"])){
+        $creditcard = $_POST["creditcard"];
+    
+    switch($creditcard){
+        case "visa":
+            echo"You selected visa";
+            break;
+        case "mastercard";
+            echo"You selected mastercard";
+            break;
+        case "Americanexp":
+            echo"You selected american express";
+            break;
+        default:
+            echo"Pls make a selection";
+    }
+}
+?>

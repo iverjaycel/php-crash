@@ -20,7 +20,7 @@
 </html>
 <?php
     
-    //isset() = Returns TRUE if a variable is declared and not NULL
+    //isset() = Returns TRUE if a    variable is declared and not NULL
     //empty() = Returns TRUE if a variable is not declared, false , null  
     
     foreach($_POST as $key => $value){
