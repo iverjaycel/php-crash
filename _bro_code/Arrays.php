@@ -20,7 +20,7 @@
                      "india"=>"New Delhi");
 
     // $capitals["USA"] = "Lasvegas";
-    // // $capitals["China"] = "Beijing";
+    // $capitals["China"] = "Beijing";
     // array_pop($capitals);
     // $keys = array_keys($capitals);
     
